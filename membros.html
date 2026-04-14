@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meus Conteúdos | GAPE Penal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="members-body">
+  <header class="topbar">
+    <div class="logo-wrap">
+      <div class="logo-mark">G</div>
+      <div>
+        <h2>GAPE Penal</h2>
+        <p>Área de membros</p>
+      </div>
+    </div>
+
+    <div class="menu-area">
+      <button id="menuToggle" class="menu-btn" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div id="dropdownMenu" class="dropdown hidden">
+        <a class="dropdown-item" href="#conteudos">Meus conteúdos</a>
+        <button class="dropdown-item" id="copyEmailBtn">Copiar e-mail</button>
+        <button class="dropdown-item danger" id="logoutBtn">Sair</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="members-container">
+    <section class="hero-card" style="background-image: url('./assets/penal-questoes-hero.jpg');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-badge">E-book educacional</div>
+        <h1>Penal Questões</h1>
+        <p>1.380 questões comentadas, mapas mentais e materiais organizados em um só lugar.</p>
+        <a class="access-btn" href="./assets/pdfs/corrigido-penal-questoes-gabaritos.pdf" target="_blank" rel="noopener noreferrer">Acessar</a>
+      </div>
+    </section>
+
+    <section id="conteudos" class="content-section">
+      <div class="section-head">
+        <h2>Meus conteúdos</h2>
+        <p id="userEmail"></p>
+      </div>
+
+      <div class="cards-grid">
+        <a class="content-card featured-card" href="./assets/pdfs/corrigido-penal-questoes-gabaritos.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="card-cover image-cover" style="background-image:url('./assets/penal-questoes-hero.jpg');">
+            <div class="cover-tag gold">PDF PRINCIPAL</div>
+          </div>
+          <div class="card-body">
+            <h4>Corrigido Penal Questões</h4>
+            <p>Material principal com gabaritos comentados. Esse fica no topo, como você pediu.</p>
+            <div class="card-meta"><span>E-book</span><span>Polícia Penal</span></div>
+            <span class="card-btn">Abrir PDF</span>
+          </div>
+        </a>
+
+        <a class="content-card" href="./assets/pdfs/portugues-principais-topicos.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="card-cover purple-cover"><div class="cover-tag">PDF</div><h3>Português</h3></div>
+          <div class="card-body">
+            <h4>Mapas Mentais - Português</h4>
+            <p>Principais tópicos para concursos em formato visual.</p>
+            <div class="card-meta"><span>Mapa mental</span><span>Linguagens</span></div>
+            <span class="card-btn">Abrir PDF</span>
+          </div>
+        </a>
+
+        <a class="content-card" href="./assets/pdfs/raciocinio-logico.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="card-cover dark-cover"><div class="cover-tag">PDF</div><h3>Raciocínio Lógico</h3></div>
+          <div class="card-body">
+            <h4>Mapas Mentais - Raciocínio Lógico</h4>
+            <p>Conteúdo de lógica com resumos e esquemas visuais.</p>
+            <div class="card-meta"><span>Mapa mental</span><span>Raciocínio</span></div>
+            <span class="card-btn">Abrir PDF</span>
+          </div>
+        </a>
+
+        <a class="content-card" href="./assets/pdfs/informatica-criptografias-e-backups.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="card-cover blue-cover"><div class="cover-tag">PDF</div><h3>Informática</h3></div>
+          <div class="card-body">
+            <h4>Criptografias e Backups</h4>
+            <p>Resumo visual de informática básica para concursos.</p>
+            <div class="card-meta"><span>Mapa mental</span><span>Informática</span></div>
+            <span class="card-btn">Abrir PDF</span>
+          </div>
+        </a>
+
+        <a class="content-card" href="./assets/pdfs/direito-constitucional-direitos-fundamentais.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="card-cover wine-cover"><div class="cover-tag">PDF</div><h3>Constitucional</h3></div>
+          <div class="card-body">
+            <h4>Direitos Fundamentais</h4>
+            <p>Direitos individuais, coletivos, sociais e políticos.</p>
+            <div class="card-meta"><span>Direito</span><span>Constitucional</span></div>
+            <span class="card-btn">Abrir PDF</span>
+          </div>
+        </a>
+
+        <a class="content-card" href="./assets/pdfs/direito-administrativo-principios-administrativos.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="card-cover green-cover"><div class="cover-tag">PDF</div><h3>Administrativo</h3></div>
+          <div class="card-body">
+            <h4>Princípios Administrativos</h4>
+            <p>Material resumido de direito administrativo.</p>
+            <div class="card-meta"><span>Direito</span><span>Administrativo</span></div>
+            <span class="card-btn">Abrir PDF</span>
+          </div>
+        </a>
+
+        <a class="content-card" href="./assets/pdfs/acao-penal.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="card-cover amber-cover"><div class="cover-tag">PDF</div><h3>Ação Penal</h3></div>
+          <div class="card-body">
+            <h4>Ação Penal</h4>
+            <p>Mapa mental de processo penal focado em ação penal.</p>
+            <div class="card-meta"><span>Processual</span><span>Penal</span></div>
+            <span class="card-btn">Abrir PDF</span>
+          </div>
+        </a>
+
+        <a class="content-card" href="./assets/pdfs/citacoes-e-intimacoes.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="card-cover sand-cover"><div class="cover-tag">PDF</div><h3>Citações</h3></div>
+          <div class="card-body">
+            <h4>Citações e Intimações</h4>
+            <p>Material de processo penal organizado em mapas mentais.</p>
+            <div class="card-meta"><span>Processual</span><span>Penal</span></div>
+            <span class="card-btn">Abrir PDF</span>
+          </div>
+        </a>
+
+        <a class="content-card" href="./assets/pdfs/provas-e-prisao.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="card-cover teal-cover"><div class="cover-tag">PDF</div><h3>Provas e Prisão</h3></div>
+          <div class="card-body">
+            <h4>Provas e Prisão</h4>
+            <p>Resumo visual com foco em prova penal e prisão.</p>
+            <div class="card-meta"><span>Processual</span><span>Penal</span></div>
+            <span class="card-btn">Abrir PDF</span>
+          </div>
+        </a>
+
+        <a class="content-card" href="./assets/pdfs/lei-penal.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="card-cover slate-cover"><div class="cover-tag">PDF</div><h3>Lei Penal</h3></div>
+          <div class="card-body">
+            <h4>Lei Penal</h4>
+            <p>Conteúdo essencial de direito penal em mapa mental.</p>
+            <div class="card-meta"><span>Direito</span><span>Penal</span></div>
+            <span class="card-btn">Abrir PDF</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
