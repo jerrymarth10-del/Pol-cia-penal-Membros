@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liberando acesso | GAPE Penal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="login-body">
+  <div class="login-shell">
+    <div class="login-card">
+      <div class="brand-row">
+        <div class="brand-badge">G</div>
+        <div>
+          <p class="eyebrow">ACESSO LIBERADO</p>
+          <h1>GAPE Penal</h1>
+        </div>
+      </div>
+
+      <p class="lead">
+        Seu acesso está sendo liberado. Você será redirecionado para a área de membros.
+      </p>
+
+      <div class="hint-box">
+        Pagamento aprovado. Entrando na sua área...
+      </div>
+
+      <div style="margin-top:18px;">
+        <a class="primary-btn" href="membros.html" style="display:inline-flex;">Entrar agora</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = 'membros.html';
+    }, 1200);
+  </script>
+</body>
+</html>
